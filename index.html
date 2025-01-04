@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body
+    class="flex justify-center min-w-screen bg-[#222] font-sans items-center min-h-screen"
+  >
+    <div
+      class="card w-[30%] mx-auto max-w-[470px]text-white my-[100px] mb-0 rounded-[20px] py-[40px] px-[35px] text-center"
+    >
+      <div class="search w-[100%] flex items-center justify-between">
+        <input
+          type="text"
+          placeholder="Enter City Name"
+          spellcheck="false"
+          class="border-0 outline-0 bg-[#ebfffc] text-[#222] py-[10px] px-[25px] h-[60px] rounded-[30px] flex-1 mr-[16px] text-[18px]"
+        />
+        <button
+          class="search-btn border-0 outline-0 bg-[#ebfffc] rounded-[50%] w-[65px] h-[60px] flex items-center justify-center"
+        >
+          <img
+            src="./images/search.png"
+            alt="search "
+            class="w-[25px] h-[25px]"
+          />
+        </button>
+      </div>
+
+      <div class="weather">
+        <img
+          src="./images/rain.png"
+          alt="weather-icon"
+          class="w-[170px] mt-[30px] mx-auto weather-icon"
+        />
+        <h1 class="temp font-[500] text-white text-[80px] font-sans">22°C</h1>
+        <h2 class="city font-[400] text-[45px] text-white -mt-[10px]">
+          New York
+        </h2>
+
+        <div class="weather-details">
+          <div
+            class="details py-0 px-[20px] mt-[50px] flex text-white justify-between"
+          >
+            <div class="col flex items-center text-left">
+              <img
+                src="./images/humidity.png"
+                alt="humidity-image"
+                class="mr-[10px] w-[40%]"
+              />
+              <div>
+                <p class="humidity text-[28px] -mt-[6px]">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+
+            <div class="col flex items-center text-left">
+              <img
+                src="./images/wind.png"
+                alt="wind-image"
+                class="mr-[10px] w-[40%]"
+              />
+              <div>
+                <p class="wind text-[28px] -mt-[6px]">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
